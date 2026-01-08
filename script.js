@@ -6,16 +6,12 @@ let timer = null;
 
 function start() {
     let play = document.getElementById("play");
-
-    // PAUSE
     if (timer !== null) {
         clearInterval(timer);
         timer = null;
         play.innerText = "Play";
         return;
     }
-
-    // PLAY
     play.innerText = "Pause";
 
     timer = setInterval(() => {
