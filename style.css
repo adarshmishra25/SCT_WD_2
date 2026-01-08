@@ -2,59 +2,79 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Background */
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: gray;
+    background: linear-gradient(135deg,#232031 , #544e79);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Card */
 section {
-    background-color: darkgray;
+    background: #f5f5f5;
     width: 30%;
+    min-width: 320px;
     height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.507), 2px 6px 20px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.226);
-}
-#ms{
-    font-size: 16px;
 }
 
-ul {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly   ;
-}
-
-li {
-    list-style-type: none;
-    
-}
-button{
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid;
-}
-
+/* Timer display */
 .timer {
-    background-color: rgb(32, 32, 32);
-    width: 200px;
-    height: 80px;
+    background-color: #1e1e1e;
+    width: 220px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 36px;
+    color: #ffffff;
+    border-radius: 18px;
+    gap: 5px;
+    letter-spacing: 1px;
+}
+
+/* Milliseconds */
+#ms {
+    font-size: 16px;
+    color: #ff7675;
+}
+
+/* Buttons container */
+ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Remove bullets */
+li {
+    list-style: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    background: #1f1c2c;
     color: white;
-    border-radius: 20px;
-    border: 1px solid rgb(255, 255, 255);
-    gap: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #928dab;
+    transform: translateY(-2px);
 }
