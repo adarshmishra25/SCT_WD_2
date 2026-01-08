@@ -6,6 +6,7 @@ let timer = null;
 
 function start() {
     let play = document.getElementById("play");
+    
     if (timer !== null) {
         clearInterval(timer);
         timer = null;
