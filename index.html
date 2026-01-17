@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop Watch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="stop-watch.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,14 +19,23 @@
             </div>
 
 
-            <ul>
+            <ul class="buttons">
                 <li>
                     <button id="play" onclick="start()">Play </button>
                 </li>
                 <li>
+                    <button onclick="lap()">Lap</button>
+                </li>
+
+                <li>
                     <button onclick="reset()">Reset</button>
                 </li>
             </ul>
+            <div class="laps">
+                <h3>Laps</h3>
+                <ul id="lapList"></ul>
+            </div>
+
         </section>
     </div>
 
